@@ -1,0 +1,6 @@
+<h2>Shell</h2>
+<div class="main">
+    <input class="input" [(ngModel)]="name" placeholder="Enter your name" />
+    <button *ngIf="name" class="btn" (click)="redirect()">Click here to load MFE</button>
+</div>
+<router-outlet></router-outlet>
