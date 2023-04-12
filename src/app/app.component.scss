@@ -9,8 +9,8 @@
     margin-left: 1rem;
 }
 .btn:hover {
-   background-color: lightpink;
-   cursor: pointer;
+    background-color: lightpink;
+    cursor: pointer;
 }
 .input {
     padding: 0.5rem;
@@ -19,7 +19,49 @@
 
 .main {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     border-bottom: 3px solid black;
     padding-bottom: 2rem;
+}
+
+.image {
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+    &__pic {
+        width: 100px;
+        border: 1px solid red;
+        border-radius: 1rem;
+    }
+
+    &__button {
+        width: 100px;
+        margin-top: 0.3rem;
+        background-color: lightgoldenrodyellow;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        border: 1px solid black;
+        cursor: pointer;;
+    }
+
+    &__btn-list {
+        margin-top: 0.3rem;
+        background-color: lightgoldenrodyellow;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        border: 1px solid black;
+
+    }
+
+    &__btn {
+        background: none;
+        width: 40px;
+        border: none;
+        cursor: pointer;
+    }
 }

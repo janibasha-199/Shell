@@ -1,5 +1,16 @@
 <h2>Shell</h2>
-<div class="main">
+<div class="image">
+    <img class="image__pic" src="assets/Red_Apple.jpg" alt="image">
+    <button class="image__button" *ngIf="!(cartState | async)?.quantity else added" (click)="addItemToCart()">Add to
+        cart</button>
+    <ng-template #added>
+        <div class="image__btn-list">
+            <button class="image__btn" (click)="addItemToCart()">+</button>
+            <button class="image__btn" (click)="removeItemFromCart()">-</button>
+        </div>
+    </ng-template>
+</div>
+<div class="list">
     <input class="input" [(ngModel)]="name" placeholder="Enter your name" />
     <button *ngIf="name" class="btn" (click)="redirect()">Click here to load MFE</button>
 </div>
