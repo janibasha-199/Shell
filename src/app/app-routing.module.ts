@@ -7,7 +7,7 @@ const routes: Routes = [
     path: 'mfe1',
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      remoteEntry: 'https://mfe1-nine.vercel.app/remoteEntry.js',
       exposedModule: './temp.module'
   })
   .then((m) => m.TempModule)
